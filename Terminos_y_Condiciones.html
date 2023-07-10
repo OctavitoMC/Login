@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminos y Condiciones</title>
+</head>
+<body>
+    <style>
+        div {
+          width: 20cm;
+          height: 10cm;
+          border: 1px solid black;
+        }
+        *{
+          font-size: 30px;
+          color: black;
+          font-family: calibri;
+        }
+        input{
+          font-family: calibri;
+          text-transform: uppercase;
+        }
+      </style>
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+    <p id="cord"></p>
+
+    <script>
+    function myFunction(e) {
+      let x = e.clientX;
+      let y = e.clientY;
+
+      let coor = "Coordenadas: (" + x + "," + y + ")";
+      document.getElementById("cord").innerHTML = coor;
+    }
+    
+    function clearCoor() {
+      document.getElementById("cord").innerHTML = "Coordenadas:";
+    }
+
+    </script>
+    <input type="datetime-local" name="fechayhora" id="fyh">
+<audio src="/Login/Vídeo sin título.mp3" controls></audio>
+<p id="write" onclick="document.write('Cuando me diste click todo el body se borro y se escribio Esto')">Hazme Click</p>
+
+</body>
+</html>
